@@ -11,6 +11,11 @@ class PSD
 
     private
 
+    DEFAULT_OPTS = {
+      opacity: 255,
+      fill_opacity: 255
+    }
+
     def do_blend(blend, fg, bg, opts={})
       opts = DEFAULT_OPTS.merge(opts)
       PSDNative::Compose.send(blend, fg, bg, opts)
