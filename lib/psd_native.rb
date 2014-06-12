@@ -6,7 +6,7 @@ module PSDNative
     base::Image.send(:include, PSDNative::ImageMode::RGB)
     base::Image.send(:include, PSDNative::ImageMode::CMYK)
     base::Image.send(:include, PSDNative::ImageMode::Greyscale)
-    base::Image.send(:include, PSDNative::ImageFormat::RLE)
+    # base::Image.send(:include, PSDNative::ImageFormat::RLE)
     base::ChannelImage.send(:include, PSDNative::ImageFormat::LayerRAW)
     base::Color.send(:include, PSDNative::Color)
     base::Util.extend PSDNative::Util
