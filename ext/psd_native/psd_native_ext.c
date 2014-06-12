@@ -23,9 +23,9 @@ void Init_psd_native() {
   rb_define_private_method(ImageMode_Greyscale, "combine_greyscale_channel", psd_native_combine_greyscale_channel, 0);
 
   // RLE decoding
-  VALUE ImageFormat = rb_define_module_under(PSDNative, "ImageFormat");
-  VALUE RLE = rb_define_module_under(ImageFormat, "RLE");
-  rb_define_private_method(RLE, "decode_rle_channel", psd_native_decode_rle_channel, 0);
+  // VALUE ImageFormat = rb_define_module_under(PSDNative, "ImageFormat");
+  // VALUE RLE = rb_define_module_under(ImageFormat, "RLE");
+  // rb_define_private_method(RLE, "decode_rle_channel", psd_native_decode_rle_channel, 0);
 
   // RAW decoding
   VALUE LayerRAW = rb_define_module_under(ImageFormat, "LayerRAW");
