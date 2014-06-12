@@ -19,7 +19,7 @@ typedef uint32_t PIXEL;
 #include "image_mode_cmyk.h"
 #include "image_mode_greyscale.h"
 #include "image_mode_rgb.h"
-#include "rle_decoding.h"
+//#include "rle_decoding.h"
 #include "canvas.h"
 #include "blender.h"
 #include "layer_raw.h"
