@@ -17,7 +17,7 @@ class PSD
     }
 
     def do_blend(blend, fg, bg, opts={})
-      File.open('/var/log/micka.tmp.text', 'a') { |file| file.write("blend:#{blend.to_s}, opts:#{opts.to_s}\n") }
+      File.open('/Users/cassymickael/Desktop/micka.tmp.text', 'a') { |file| file.write("blend:#{blend.to_s}, opts:#{opts.to_s}\n") }
       opts = DEFAULT_OPTS.merge(opts)
       PSDNative::Compose.send(blend, fg, bg, opts)
     end
